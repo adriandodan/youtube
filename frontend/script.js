@@ -6,14 +6,17 @@ function authenticate() {
         })
         .then(
             function(response) {
-                console.log(response);
-                var email = response.Pt.yu;
-                var name = response.Pt.Ad;
-                var image = response.Pt.QK;
-                console.log(email);
-                console.log(name);
-                console.log(image);
-
+                $("#googlebtn").addClass("hide");
+                $("#content").addClass("padding-top");
+                $("#start").css( { "height" : "170px" , "padding-top" : "40px"});
+                $("#profile-info-signout").removeClass("hide");
+                $("#info-container").removeClass("hide");
+                $("#select").removeClass("hide");
+                $("#videobtn").removeClass("hide");
+                $("#profile-email").html( response.Pt.yu);
+                $("#profile-name").html( "Welcome, " + (response.Pt.Ad) + "!");
+                 document.getElementById("email-img").src =  response.Pt.QK;
+               
                 console.log("Sign-in successful");
             },
             function(err) {
@@ -50,6 +53,9 @@ function execute() {
         })
         .then(
             function(response) {
+                $("#allVideos").removeClass("hide");
+                $("#content").removeClass("container-height");
+               
                 document.getElementById("countryInfo").style.display = "block";
                 var iframes = document.getElementsByTagName("iframe");
                 for (var i = 0; i < iframes.length; i++) {
@@ -128,3 +134,19 @@ function displayCountryInfo(countryByAlpha2Code) {
         })
         .catch((err) => console.log("Error:", err));
 }
+
+function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function (response) {
+            auth2.disconnect();
+            
+                $("#googlebtn").removeClass("hide");
+                $("#content").removeClass("padding-top");
+                $("#start").css( { "height" : "400px" , "padding-top" : "200px"});
+                $("#profile-info-signout").addClass("hide");
+                $("#info-container").addClass("hide");
+                $("#select").addClass("hide");
+                $("#videobtn").addClass("hide");
+        });
+
+    }

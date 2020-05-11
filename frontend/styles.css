@@ -1,3 +1,55 @@
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.google-btn {
+    width: 184px;
+    height: 42px;
+    background-color: #4285f4;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .25);
+    zoom: 200%;
+    margin-left: 180px;
+}
+
+.google-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.google-icon {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 18px;
+    height: 18px;
+}
+
+.btn-text {
+    float: right;
+    margin: 11px 11px 0 0;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-family: "Roboto";
+}
+
+:hover {
+    box-shadow: 0 0 6px #4285f4;
+}
+
+:active {
+    background: button-active-blue;
+}
+
+
 body {
     font-family: "Marriwather";
     font-size: 1.5rem;
@@ -8,6 +60,7 @@ body {
     background-color: #effffb;
     border-right: solid;
     border-left: solid;
+    
 }
 
 .itemCountryInfo {
@@ -28,7 +81,7 @@ body {
     width: 200px;
     height: 100px;
     position: relative;
-    bottom: 250px;
+    bottom: 200px;
     left: 100px;
     margin: 0 auto;
 }
@@ -43,7 +96,6 @@ body {
 
 #countryInfo {
     padding-top: 5%;
-    display: block;
 }
 
 .showvideos-btn {
@@ -65,17 +117,37 @@ iframe {
 }
 
 #email-img {
-    float: left;
-    align-content: right;
+    border-radius: 50%;
+    margin-left: 1%;
 }
 
 #profileinfo {
-    float: right;
     text-align: right;
 }
 
-#profile-name {}
-
-#profile-email {
-    text-align: center;
+#profile-name {
+    display: block;
 }
+
+.hide {
+    display: none;
+}
+
+#start {
+    height: 400px;
+    padding-top: 200px;
+    text-align: center;
+    font-family: "Galada";
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.container-height{height: 1000px;}
+
+.padding-top{
+    padding-top: 30px;
+}
+
+p{margin-bottom:0.1rem;}

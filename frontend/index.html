@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="utf-8" />
     <!--Font awesome -->
@@ -9,6 +8,8 @@
     <!--Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <link href="https://fonts.googleapis.com/css?family=Galada&display=swap" rel="stylesheet">
     <!--Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <!--Bootstrap Scripts -->
@@ -27,30 +28,36 @@
 </head>
 
 <body>
-    <div class="container">
-        <div>
-            <button id="login-btn" onclick="authenticate().then(loadClient)">
-                Login
-              </button>
+    <div id="content" class="container container-height">
+        <div id="profile-info-signout" class="row hide">
+            <div class="col-lg-6">
+                <h3 id="profile-name"></h3>
+                <img id="email-img" src="" alt="profile-img">
+            </div>
+            <div id="profileinfo" class="col-lg-6">
+                <h>You are logged in as</h>
+                <h5 id="profile-email"></h5>
+                <button id="signout-btn" onclick="signOut()">Sign Out</button>
+            </div>
         </div>
-        <div>
-            <img id="email-img" src="https://lh4.googleusercontent.com/-3DGa7OcavVQ/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmIT9x99R5jPWTZUDVgFD5D9QNPfQ/s96-c/photo.jpg" alt="profile-img">
-            <div id="profileinfo">
-                <button id="signout-btn" onclick="">
-                    Sign Out
-                </button>
-                <h3 id="profile-name">Welcome, Adrian Dodan!</h3>
-                <h5 id="profile-email">You are logged in as dodanadrian22@gmail.com</h5>
 
+        <div id="start">
+            <h1>Most Wanted Videos From Youtube</h1>
+        </div>
+        <div id="googlebtn" class="google-btn" onclick="authenticate().then(loadClient)">
+            <div class="google-icon-wrapper">
+                <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
+            </div>
+            <p class="btn-text"><b>Sign in with google</b></p>
+        </div>
+
+        <div id="info-container" class="hide">
+            <div id="select" class="hide">
+                <label for="">Select country</label>
+                <select id="countriesList" class="center" onclick="showCountries()"></select>
             </div>
 
-        </div>
-
-
-        <div id="info-container">
-            <label for="">Select country</label>
-            <select id="countriesList" class="center" onclick="showCountries()"></select>
-            <div id="countryInfo">
+            <div id="countryInfo" class="hide">
                 <p class="itemCountryInfo">Capital: <span id="capital"></span></p>
                 <p class="itemCountryInfo">Population: <span id="population"></span></p>
                 <p class="itemCountryInfo">Currencies: <span id="currencies"></span></p>
@@ -58,12 +65,13 @@
                 <p class="itemCountryInfo">Subregion: <span id="subregion"></span></p>
             </div>
 
-            <div id="flag-container">
+            <div id="flag-container" class="hide">
                 <img id="img-flag" src="" alt="" />
             </div>
         </div>
-        <button class="showvideos-btn" onclick="execute()">ShowVideos</button>
-        <div class="row">
+        <button id="videobtn" class="showvideos-btn hide" onclick="execute()">ShowVideos</button>
+        
+        <div id="allVideos" class="row hide">
             <div class="col-lg-6 iframePosition">
                 <iframe id="video0"></iframe>
             </div>
