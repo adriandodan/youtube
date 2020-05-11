@@ -23,25 +23,39 @@
 
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="script.js" type="text/javascript">
-       
     </script>
 </head>
 
 <body>
     <div class="container">
-        <button id="login-btn" onclick="authenticate().then(loadClient)">
-        Login
-      </button>
+        <div>
+            <button id="login-btn" onclick="authenticate().then(loadClient)">
+                Login
+              </button>
+        </div>
+        <div>
+            <img id="email-img" src="https://lh4.googleusercontent.com/-3DGa7OcavVQ/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmIT9x99R5jPWTZUDVgFD5D9QNPfQ/s96-c/photo.jpg" alt="profile-img">
+            <div id="profileinfo">
+                <button id="signout-btn" onclick="">
+                    Sign Out
+                </button>
+                <h3 id="profile-name">Welcome, Adrian Dodan!</h3>
+                <h5 id="profile-email">You are logged in as dodanadrian22@gmail.com</h5>
+
+            </div>
+
+        </div>
+
 
         <div id="info-container">
             <label for="">Select country</label>
             <select id="countriesList" class="center" onclick="showCountries()"></select>
             <div id="countryInfo">
-                <p>Capital: <span id="capital"></span></p>
-                <p>Population: <span id="population"></span></p>
-                <p>Currencies: <span id="currencies"></span></p>
-                <p>Region: <span id="region"></span></p>
-                <p>Subregion: <span id="subregion"></span></p>
+                <p class="itemCountryInfo">Capital: <span id="capital"></span></p>
+                <p class="itemCountryInfo">Population: <span id="population"></span></p>
+                <p class="itemCountryInfo">Currencies: <span id="currencies"></span></p>
+                <p class="itemCountryInfo">Region: <span id="region"></span></p>
+                <p class="itemCountryInfo">Subregion: <span id="subregion"></span></p>
             </div>
 
             <div id="flag-container">
@@ -49,24 +63,62 @@
             </div>
         </div>
         <button class="showvideos-btn" onclick="execute()">ShowVideos</button>
-        <div class="row center">
+        <div class="row">
             <div class="col-lg-6 iframePosition">
-                <iframe  id="video0"></iframe>
+                <iframe id="video0"></iframe>
             </div>
+            <div class="col-lg-6 videoInfo iframePosition">
+                <p class="itemVideoInfo">Published At: <span id="video0pb0"></span></p>
+                <p class="itemVideoInfo">Views: <span id="video0views0"></span></p>
+                <p class="itemVideoInfo">Likes: <span id="video0likes0"></span></p>
+                <p class="itemVideoInfo">Dislikes: <span id="video0dislikes0"></span></p>
+                <p class="itemVideoInfo">Comments: <span id="video0comments0"></span></p>
+            </div>
+
             <div class="col-lg-6 iframePosition">
-                <iframe  id="video1"></iframe>
+                <iframe id="video1"></iframe>
+            </div>
+            <div class="col-lg-6 videoInfo iframePosition">
+                <p class="itemVideoInfo">Published At: <span id="video1pb1"></span></p>
+                <p class="itemVideoInfo">Views: <span id="video1views1"></span></p>
+                <p class="itemVideoInfo">Likes: <span id="video1likes1"></span></p>
+                <p class="itemVideoInfo">Dislikes: <span id="video1dislikes1"></span></p>
+                <p class="itemVideoInfo">Comments: <span id="video1comments1"></span></p>
             </div>
             <div class="col-lg-6 iframePosition">
                 <iframe id="video2"></iframe>
             </div>
-            <div class="col-lg-6 iframePosition">
-                <iframe  id="video3"></iframe>
+            <div class="col-lg-6 videoInfo iframePosition">
+                <p class="itemVideoInfo">Published At: <span id="video2pb2"></span></p>
+                <p class="itemVideoInfo">Views: <span id="video2views2"></span></p>
+                <p class="itemVideoInfo">Likes: <span id="video2likes2"></span></p>
+                <p class="itemVideoInfo">Dislikes: <span id="video2dislikes2"></span></p>
+                <p class="itemVideoInfo">Comments: <span id="video2comments2"></span></p>
             </div>
-            <div class="col-lg-12 iframePosition">
+            <div class="col-lg-6 iframePosition">
+                <iframe id="video3"></iframe>
+            </div>
+            <div class="col-lg-6 videoInfo iframePosition">
+                <p class="itemVideoInfo">Published At: <span id="video3pb3"></span></p>
+                <p class="itemVideoInfo">Views: <span id="video3views3"></span></p>
+                <p class="itemVideoInfo">Likes: <span id="video3likes3"></span></p>
+                <p class="itemVideoInfo">Dislikes: <span id="video3dislikes3"></span></p>
+                <p class="itemVideoInfo">Comments: <span id="video3comments3"></span></p>
+            </div>
+            <div class="col-lg-6 iframePosition">
                 <iframe id="video4"></iframe>
             </div>
+            <div class="col-lg-6 videoInfo iframePosition">
+                <p class="itemVideoInfo">Published At: <span id="video4pb4"></span></p>
+                <p class="itemVideoInfo">Views: <span id="video4views4"></span></p>
+                <p class="itemVideoInfo">Likes: <span id="video4likes4"></span></p>
+                <p class="itemVideoInfo">Dislikes: <span id="video4dislikes4"></span></p>
+                <p class="itemVideoInfo">Comments: <span id="video4comments4"></span></p>
+            </div>
         </div>
+
     </div>
+
 </body>
 
 </html>

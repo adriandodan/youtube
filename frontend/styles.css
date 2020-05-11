@@ -1,9 +1,16 @@
 body {
     font-family: "Marriwather";
     font-size: 1.5rem;
+    background-color: #0fabbc;
 }
 
-p {
+.container {
+    background-color: #effffb;
+    border-right: solid;
+    border-left: solid;
+}
+
+.itemCountryInfo {
     display: block;
     width: 30%;
 }
@@ -36,7 +43,7 @@ p {
 
 #countryInfo {
     padding-top: 5%;
-    display: none;
+    display: block;
 }
 
 .showvideos-btn {
@@ -49,6 +56,26 @@ p {
     text-align-last: center;
 }
 
-iframe{
-    display: none;
+iframe {
+    display: inline;
+}
+
+.videoInfo {
+    padding: 50px;
+}
+
+#email-img {
+    float: left;
+    align-content: right;
+}
+
+#profileinfo {
+    float: right;
+    text-align: right;
+}
+
+#profile-name {}
+
+#profile-email {
+    text-align: center;
 }
