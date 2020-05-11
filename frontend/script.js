@@ -147,6 +147,7 @@ function signOut() {
                 $("#info-container").addClass("hide");
                 $("#select").addClass("hide");
                 $("#videobtn").addClass("hide");
+                $("#allVideos").addClass("hide");
         });
 
     }
