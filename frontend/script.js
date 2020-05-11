@@ -14,9 +14,9 @@ function authenticate() {
                 $("#info-container").removeClass("hide");
                 $("#select").removeClass("hide");
                 $("#videobtn").removeClass("hide");
-                $("#profile-email").html( response.Qt.zu);
-                $("#profile-name").html( "Welcome, " + (response.Qt.Ad) + "!");
-                 document.getElementById("email-img").src =  response.Qt.gL;
+                $("#profile-email").html( response.Pt.yu);
+                $("#profile-name").html( "Welcome, " + (response.Pt.Ad) + "!");
+                 document.getElementById("email-img").src =  response.Pt.QK;
                
                 console.log("Sign-in successful");
             },
