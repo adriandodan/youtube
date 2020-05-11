@@ -139,15 +139,16 @@ function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function (response) {
             auth2.disconnect();
-            
+               
                 $("#googlebtn").removeClass("hide");
                 $("#content").removeClass("padding-top");
-                $("#start").css( { "height" : "400px" , "padding-top" : "200px"});
+                $("#content").css({"padding-top": "190px"});
                 $("#profile-info-signout").addClass("hide");
                 $("#info-container").addClass("hide");
                 $("#select").addClass("hide");
                 $("#videobtn").addClass("hide");
                 $("#allVideos").addClass("hide");
+                $("#content").addClass("container-height");
         });
 
     }
