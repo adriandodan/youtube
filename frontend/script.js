@@ -6,6 +6,7 @@ function authenticate() {
         })
         .then(
             function(response) {
+                console.log(response);
                 $("#googlebtn").addClass("hide");
                 $("#content").addClass("padding-top");
                 $("#start").css( { "height" : "170px" , "padding-top" : "40px"});
@@ -13,9 +14,9 @@ function authenticate() {
                 $("#info-container").removeClass("hide");
                 $("#select").removeClass("hide");
                 $("#videobtn").removeClass("hide");
-                $("#profile-email").html( response.Pt.yu);
-                $("#profile-name").html( "Welcome, " + (response.Pt.Ad) + "!");
-                 document.getElementById("email-img").src =  response.Pt.QK;
+                $("#profile-email").html( response.Qt.zu);
+                $("#profile-name").html( "Welcome, " + (response.Qt.Ad) + "!");
+                 document.getElementById("email-img").src =  response.Qt.gL;
                
                 console.log("Sign-in successful");
             },
