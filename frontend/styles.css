@@ -41,9 +41,7 @@
     font-family: "Roboto";
 }
 
-:hover {
-    box-shadow: 0 0 6px #4285f4;
-}
+
 
 :active {
     background: button-active-blue;
