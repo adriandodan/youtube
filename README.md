@@ -19,7 +19,7 @@ Aici vine în sprijin aplicația web pe care am dezvoltat-o, care îți oferă p
 În dezvoltarea acestei aplicații, am utilizat două API.
 
 - Youtube Data API 
->Ne permite să încorporăm pe propriul site, funții executate în mod normal pe site-ul youtube. Cu ajutul acestui API, am preluat videoclipurile din Tranding din fiecare țară și informații despre acestea, precum id video, denumire videoclip, descriere, canal, numar vizualizări, număr like-uri, număr dislike-uri, număr comentarii. 
+>Ne permite să încorporăm pe propriul site, funcții executate în mod normal pe site-ul youtube. Cu ajutul acestui API, am preluat videoclipurile din Tranding din fiecare țară și informații despre acestea, precum id video, denumire videoclip, descriere, canal, numar vizualizări, număr like-uri, număr dislike-uri, număr comentarii. 
 
 - Countries API 
 >Acest API returnează o listă cu toate țările de pe glob și informații despre fiecare țară în parte, precum steagul, capitala, moneda, regiunea, subregiunea, limbile vorbite.
