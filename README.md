@@ -1,5 +1,8 @@
 # Youtube - MostWanted
 
+AWS:http://node-express-env.eba-txk2b426.us-east-1.elasticbeanstalk.com/
+HEROKU: https://still-bayou-31018.herokuapp.com/
+
 ### Introducere
 
 Youtube MostWanted este o aplicație web care permite utilizatorului să vadă care sunt primele 5 videoclipuri în tranding pe youtube din fiecare țară și informații despre acestea.
