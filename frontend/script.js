@@ -27,7 +27,7 @@ function authenticate() {
 }
 
 function loadClient() {
-    gapi.client.setApiKey("AIzaSyAv5equY4Ih4Mnrg5Hm9_0roDfpF2crI5E");
+    gapi.client.setApiKey("AIzaSyC-Jaskem1KfhaDz437rtFcKp3xxBOeohw");
     return gapi.client
         .load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
         .then(
@@ -88,7 +88,7 @@ function execute() {
 }
 gapi.load("client:auth2", function() {
     gapi.auth2.init({
-        client_id: "578129708410-8lrl3jn90f31uu7ngg0lp6d66o6s8k3t.apps.googleusercontent.com",
+        client_id: "221872027468-6t4ik8fu6941smm8emrk58kugbq287ve.apps.googleusercontent.com",
     });
 });
 
